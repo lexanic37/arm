@@ -23,12 +23,19 @@
     <link rel="stylesheet" href="css/bgivedeo.css">
     <link rel="stylesheet" href="css/bootstrap/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap/animate.css">
+
+    <!--fonts!-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/FontAwesome.otf">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2">
       <link href="http://allfont.ru/allfont.css?fonts=micra-bold" rel="stylesheet" type="text/css" >
      <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
-    <link rel="stylesheet" href="css/vegas.min.css">
-    <script src="js/vegas.min.js"></script>
+    <link rel="stylesheet" href="css/menubut.css">
 </head>
 <body>
 <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
@@ -45,6 +52,7 @@
         <li class="menu__li" data-menuanchor="fifthPage"><a class="menu__a" href="#fifthPage">ГДЕ?</a></li>
     </ul>
 </div>
+<div class="menu_mob"><button><span>Menu</span></button></div>
 <div   id="fullpage">
     <div class="section page1">
         <div class="container">
@@ -232,8 +240,14 @@
                         </span> </p>
                         <p class="halfminr">
                             <img src="" alt="">Достижения:<br>
-                            <ul
-                        </p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                     </div>
                     <div class="coachabb"><p class="coachab"><span>O себе:</span> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque facere recusandae rem vitae voluptatibus! Adipisci animi cum distinctio dolore error eum ex laudantium odio possimus, quaerat, reiciendis, saepe sapiente vero?
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consectetur dolorem doloremque doloribus ducimus eum eveniet fuga fugiat in ipsum laudantium maiores quisquam recusandae, repellendus reprehenderit saepe sequi sit tempore?Adipisci aliquid architecto cumque dolorem doloremque ducimus exercitationem, harum id ipsum iure laudantium minima natus nesciunt nulla numquam pariatur porro quas quidem quis quo repellendus saepe sequi suscipit, totam voluptates.Architecto aspernatur consectetur dicta dignissimos dolore doloribus eos error esse et facere hic id illo incidunt ipsam iste magnam maiores minima mollitia nemo nisi quisquam repudiandae sed, sint tempore veritatis.
@@ -245,6 +259,7 @@
         <div class="slide"> Slide 3 </div>
         <div class="slide"> Slide 4 </div>
     </div>
+
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="fullpage/jquery.fullPage.min.js"></script>
@@ -407,6 +422,42 @@ $('.item4').click(function () {
 
     $('.half_3 div').fadeIn();
 })
+</script>
+<script>
+    var p;
+    p=1;
+
+    setInterval(function () {
+        if ($('.page1').hasClass('active')) {
+            $('.menu_container').removeClass('mobile')
+            $('.menu_mob').addClass('mobile')
+
+
+
+
+
+
+
+        }
+        else {
+            $('.menu_container').addClass('mobile')
+            $('.menu_mob').removeClass('mobile')
+
+        }
+    }, 100);
+    $('button').click(function() {
+        var p=1;
+        $(this).toggleClass('clicked');
+        if ($('button').hasClass('clicked')){
+            $('.menu_container').addClass('full');
+
+        }
+        else{
+            $('.menu_container').removeClass('full');
+
+        }
+
+    });
 </script>
 </body>
 </html>

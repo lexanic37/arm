@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
-    z-index: 999;
+
 }
 .advantage{
     flex-basis: 10%;
