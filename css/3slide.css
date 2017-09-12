@@ -27,7 +27,7 @@
 .half_2 img{
     position: absolute;
     bottom: 0;
-    z-index: 999;
+    z-index: 980;
     left: 10%;
     max-width:100%;
     max-height: 95%;

@@ -6,6 +6,7 @@
     justify-content: center;
     z-index: 997;
     margin-top: 30px;
+
 }
 .menu_mob{
     z-index: 999;
@@ -167,15 +168,22 @@
 }
 }
 .mobile{
-    display: none;
+    opacity: 0;
+
 }
+
+
 .full{
-    display: flex;
+
+    opacity: 1;
     width: 100%;
     height: 100%;
     background-color: black;
     margin-top: 0;
-    transition: all .9s;
+    animation: fadeIn;
+    animation-duration: 1s;
+    transition-delay: 1s;
+    transition: all 1s;
 }
 
 

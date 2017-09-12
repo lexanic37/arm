@@ -32,14 +32,19 @@
     width: 100%;
     height: 50%;
 }
-.item_img{
+.bigimg{
+    background-image: url(../images/4slbggym.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item_img1,.item_img2,.item_img3,.item_img4{
     width: 18vh;
     height: 18vh;
-    background-image: url(../images/4slbggym.jpg);
+    background-image: url(../images/man3sl.png);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    margin-left: 0.5vw;
+    margin-left: 0.7vw;
     flex-shrink: 0;
 }
 .item1, .item2, .item3, .item4{
